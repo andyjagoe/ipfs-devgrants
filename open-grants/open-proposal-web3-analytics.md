@@ -114,7 +114,7 @@ To use Web3 Analytics, you instrument your app using [Analytics](https://github.
 
 You can see Web3 Analytics working on this [demo site](https://celadon-pothos-120129.netlify.app/) ([source code](https://github.com/andyjagoe/web3-analytics-demo)). Click the buttons to generate events. You'll see confirmation toasts appear in the browser. Open the browser console to see the interactions with the decentralized back-end.
 
-*Deliverables*:
+*What still needs to be done*:
 * Upgrade OpenGSN client to v3 (which uses ethers instead of web3) to reduce the size of our tracking package
 * Migrate from Ceramic testnet to mainnet
 * Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon)
@@ -127,7 +127,7 @@ When a new user arrives at your app, we auto-generate a secp256k1 keypair for th
 
 I created a [secp256k1 adapter](https://www.npmjs.com/package/key-did-provider-secp256k1) for Ceramic because it is the same curve used in Ethereum and Bitcoin. This is important because of the next component. Since our data is decentralized, we need a smart contract to keep track of it so we can find it again.
 
-*Deliverables*:
+*What still needs to be done*:
 * Update Ceramic data models to use new GraphQL interface so indexing is extensible and system scales. 
 * Bring up Ceramic mainnet node and migrate from Ceramic testnet to mainnet
 
@@ -142,7 +142,7 @@ The contracts are currently running on Rinkeby but will deploy to an EVM compati
 * [Web3Analytics.sol](https://rinkeby.etherscan.io/address/0xAbff8ea6b55A80B18d57b8c4AD36DC55583cA2cb#code)
 * [Web3AnalyticsPaymaster.sol](https://rinkeby.etherscan.io/address/0xfabB9AA1532fC563b7ccB040E9943D4396B2D100#code)
 
-*Deliverables*:
+*What still needs to be done*:
 * Update smart contracts to collect a fee from apps that would like to use the service to cover gas station network fees.
 * Create self-service UI to authorize fee collection 
 * Upgrade OpenGSN smart contracts to v3
@@ -158,7 +158,7 @@ To address this, I’ve created an [indexer](https://github.com/andyjagoe/airbyt
 
 For now, data is stored in an S3 data lake in [Apache Parquet](https://databricks.com/glossary/what-is-parquet) format and accessed via [AWS Athena](https://aws.amazon.com/athena/). [Apache Spark](https://spark.apache.org/) also supports S3 data lakes in parquet format and is another option for us as we scale. Once Ceramic's GraphQL interface has robust indexing and sufficient performance to support analytics queries, we will pull data directly from Ceramic instead of using S3.
 
-*Deliverables*:
+*What still needs to be done*:
 * Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and system scales. 
 * Migrate from Ceramic testnet to mainnet
 
@@ -170,7 +170,7 @@ I expect we will create many of the first dashboards as templates to make gettin
 
 An alpha version of the dashboard is [here](https://web3analytics.network/) and you can view a [sample dashboard](https://web3analytics.network/users/99281713380d8efc77348ef00b1f02ec/dashboard/andyjagoecom-key-metrics) I’ve created for one of the sites I’ve instrumented. Source code is [here](https://github.com/andyjagoe/web3-analytics-app).
 
-*Deliverables*:
+*What still needs to be done*:
 * Expose database schema in the UI to make query generation easier
 * Create documentation and example SQL queries/dashboards to support a range of analytics questions so an app wanting to use the service can easily create their own queries/dashboards.
 
