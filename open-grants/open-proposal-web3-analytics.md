@@ -66,7 +66,7 @@ The good news is that the project has a relatively straight-forward and compelli
 
 As web3 projects like [Farcaster](https://www.farcaster.xyz/) (and other like it) mature, they will realize their protocols need decentralized, privacy preserving analytics built into the protocol or provided by a third party decentralized network. Farcaster needs to aggregate impressions, clicks, expands, profile visits, etc (just like Twitter does) and this can't be done separately in each Farcaster client or each client's data will be incomplete/fragemented.
 
-I don't think it will make sense for every web3 project to roll their own decentralized analytics solution from first principles. And this is why I think there's a great opportunity for Web3 Analytics and IPFS to provide the solution.
+I don't think it will make sense for every web3 project to roll their own decentralized analytics solution from first principles. This is why I think there's a great opportunity for Web3 Analytics and IPFS to provide the solution.
 
 ## Deliverables
 
