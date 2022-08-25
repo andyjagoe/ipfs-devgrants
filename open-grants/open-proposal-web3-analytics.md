@@ -1,4 +1,4 @@
-# Open Grant Proposal: `Web3 Analytics`
+# Open Grant Proposal: `Web3 Product Analytics`
 
 **Name of Project:** Web3 Analytics
 
@@ -27,15 +27,15 @@ But a web3 project without analytics is flying blind. Without analytics, you hav
 
 On-chain analytics are great. But they’re the very bottom of the funnel. A tiny fraction of the user journey. Transaction data misses everything that leads up to the transaction. And everything that happens afterwards. Alone, it’s not enough.
 
-Web3 Analytics is an attempt to provide projects another option. A decentralized analytics solution that can't be shut down or censored. A public good that is default open and enables complete transparency for everyone into how a product is being used, without compromising privacy or web3 values.
+Web3 Analytics is an attempt to provide projects another option. A decentralized analytics solution that can't be shut down or censored. A public good that is default open and enables complete transparency into how a product is being used, without compromising privacy or web3 values.
 
 ### How is it different?
 
 All the analytics solutions today are centralized and default closed. This means that only the app owner can see the dashboards and what data is being collected. Users do not own their data and may not delete it unless the app owner allows them to. Also, because data is centralized, it can be censored and shut down. One of the most forward looking new analytics products is Plausible Analytics (https://plausible.io/). They are open source and allow you to host your own service--but they don't solve the problem of centralization and they don't make analytics data a public good. The majority of web3 projects are using some sort of centralized service, with at [least half using Google Analytics](https://docs.google.com/spreadsheets/d/1P1yWqr1-r1xv2nUSPgT5pXtUx3IvPyYw0ZUAdpkUHjI/edit?usp=sharing).
 
-By contrast, the solution I'm proposing is a decentralized analytics public good, where all data is readable by anyone and it's difficult to censor it or shut it down. Projects can get critical product insights to improve the user experience without breaking their user's trust or compromising web3 values. The analytics service is default open, so it actually increases transparency into how a project is being used. It does for off-chain data what Dune Analytics has done for on-chain data.
+By contrast, the solution I'm proposing is a decentralized public good, where all data is readable by anyone and it's difficult to censor it or shut it down. Projects can get critical product insights to improve the user experience without breaking their user's trust or compromising web3 values. The analytics service is default open, so it actually increases transparency into how a project is being used. It does for off-chain data what Dune Analytics has done for on-chain data.
 
-### Solution and Current Status
+### Current Status
 
 I've built a proof-of-concept (alpha) of the system, which consists of 5 components:
 
@@ -46,6 +46,8 @@ I've built a proof-of-concept (alpha) of the system, which consists of 5 compone
 * Dashboard Builder / UI
 
 [Here is how the system works, with links to source code and the prototype.](https://docs.google.com/document/d/1fCYnOMHetbfH4MvWoPs-e0KHHTIzgwF1IrWBAqSmU08/edit?usp=sharing)
+
+The purpose of this grant is to allow me to finish the project and deploy it to mainnet.
 
 ## Value
 
