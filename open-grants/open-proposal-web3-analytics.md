@@ -58,7 +58,15 @@ The purpose of this grant is to allow me to finish the project and deploy it to 
 
 <!-- This section should be 1-3 paragraphs long. -->
 
+The benefit to the IPFS ecosystem of getting this project to work is a significant increase in IPFS usage. Each application that instruments with Web3 Analytics generates a continuous river of data into the IPFS ecosystem. This data is pinned by default, so more data also means more fee income for IPFS pinning services. And more fee income enables more investment by participants into the IPFS ecosystem. The risk of not having an application like this on IPFS is that one if created for a competing ecosystem and that ecosystem is the beneficiary of the increased usage and fee income. 
 
+The primary execution risk in this project is not technical. A proof-of-concept exists and the path to mainnet and scalability is pretty clear. The primary challenge for the project will be getting traction with the community. This is normal for a project like this.
+
+The good news is that the project has a straight-forward distribution motion and clear value proposition. A project doesn't need to choose between Web3 Analytics and a competing analytics product. The front-end instrumentation package we use allows sending data to both Web3 Analytics and most other major analytics packages in parallel. This dramatically reduces switching costs of changing analytics platforms and allows someone to easily try Web3 Analytics while still using their existing analytics platform. And because web3 projects are open source, we can identify projects who would most benefit and do the integration/migration ourselves and issue a PR for inclusion. This approach won't scale, but is a great way to get adoption/trial in the early days.
+
+As projects web3 projects like [Farcaster](https://www.farcaster.xyz/) (and other like it) mature, they will realize their protocols need decentralized, privacy preserving analytics built into the protocol or provided by a third party decentralized network. Farcaster needs to aggregate impressions, clicks, expands, profile visits, etc and this can't be done separately in each Farcaster client. 
+
+I don't think it will make sense for every web3 project to roll their own decentralized analytics solution from first principles, and this is why I think there's a great opportunity for Web3 Analytics and IPFS to provide the solution.
 
 ## Deliverables
 
