@@ -58,7 +58,7 @@ The purpose of this grant is to allow me to finish the project and deploy it to 
 
 <!-- This section should be 1-3 paragraphs long. -->
 
-The benefit to IPFS of this projects working is a significant increase in IPFS usage. Each application that instruments with Web3 Analytics generates a continuous river of data into the IPFS ecosystem. This data is pinned by default, so more data also means more fee income for IPFS pinning services. And more fee income enables more investment by participants into the IPFS ecosystem. The risk of not having an application like this on IPFS is that one is created for a competing ecosystem and that ecosystem is the beneficiary of the increased usage and fee income. 
+The benefit to IPFS of this project working is a significant increase in IPFS usage. Each application that instruments with Web3 Analytics generates a continuous river of data into the IPFS ecosystem. This data is pinned by default, so more data also means more fee income for IPFS pinning services. And more fee income enables more investment by participants into the IPFS ecosystem. The risk of not having an application like this on IPFS is that a similar application gets to critical mass on a competing ecosystem and that ecosystem is the beneficiary of the increased usage and fee income. 
 
 The primary execution risk for this project is not technical. A proof-of-concept exists and the path to mainnet and scalability is pretty clear. The main challenge for the project will be getting traction with the community. This is normal for a project like this.
 
