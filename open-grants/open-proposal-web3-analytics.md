@@ -168,7 +168,12 @@ The dashboard builder is a free tool that allows anyone to build a dashboard usi
 
 I expect we will create many of the first dashboards as templates to make getting started easier for users. The hope is we hand this off to the community over time the same way Dune has.
 
-An alpha version of the dashboard is [here](https://web3analytics.network/) and you can view a [sample dashboard](https://web3analytics.network/users/99281713380d8efc77348ef00b1f02ec/dashboard/andyjagoecom-key-metrics) I’ve created for one of the sites I’ve instrumented. Source code is [here](https://github.com/andyjagoe/web3-analytics-app).
+An alpha version of the dashboard is [here](https://web3analytics.network/) and you can view a [sample dashboard](https://web3analytics.network/users/99281713380d8efc77348ef00b1f02ec/dashboard/andyjagoecom-key-metrics) I’ve created for one of the sites I’ve instrumented. Source code is [here](https://github.com/andyjagoe/web3-analytics-app). Screenshots of a sample dashboard and a sample query used to create a dashboard component are below.
+
+![image](https://drive.google.com/uc?export=view&id=1thfZY4n0wTLbCSQPYcybt-MXfrgoWidN)
+
+![image](https://drive.google.com/uc?export=view&id=1S2PQc5tBtbNJ8nM59jqu6Kg8sWKvGpEL)
+
 
 *What still needs to be done*:
 * Expose database schema in the UI to make query generation easier
