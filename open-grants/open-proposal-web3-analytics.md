@@ -33,7 +33,7 @@ Web3 Analytics is an attempt to provide projects another option. A decentralized
 
 All the analytics solutions today are centralized and default closed. This means that only the app owner can see the dashboards and what data is being collected. Users do not own their data and may not delete it unless the app owner allows them to. Also, because data is centralized, it can be censored and shut down. One of the most forward looking new analytics products is Plausible Analytics (https://plausible.io/). They are open source and allow you to host your own service--but they don't solve the problem of centralization and they don't make analytics data a public good. The majority of web3 projects are using some sort of centralized service, with at [least half using Google Analytics](https://docs.google.com/spreadsheets/d/1P1yWqr1-r1xv2nUSPgT5pXtUx3IvPyYw0ZUAdpkUHjI/edit?usp=sharing).
 
-By contrast, the solution I'm proposing is a decentralized public good, where all data is readable by anyone and it's difficult to censor it or shut it down. Projects can get critical product insights to improve the user experience without breaking their user's trust or compromising web3 values. The analytics service is default open, so it actually increases transparency into how a project is being used. It does for off-chain data what Dune Analytics has done for on-chain data.
+By contrast, the solution I'm proposing is a decentralized public good, where all data is readable by anyone and difficult to censor or shut it down. Projects can get critical product insights to improve their user experience without breaking a user's trust or compromising web3 values. The analytics service is default open, so it actually increases transparency into how a project is being used. It does for off-chain data what Dune Analytics has done for on-chain data.
 
 ### Current Status
 
@@ -63,6 +63,8 @@ The purpose of this grant is to allow me to finish the project and deploy it to 
 ## Deliverables
 
 <!-- Please describe in details what your final deliverable for this project will be. Include a specification of the project and what functionality the software will deliver when it is finished. -->
+
+The goal of the grant proposal is to deliver a usable first version to mainnet. Specifically, this means taking the existing project and completing the below deliverables.
 
 *Front-End Instrumentation*:
 * Upgrade OpenGSN client to v3 (which uses ethers instead of web3) to reduce the size of our tracking package
