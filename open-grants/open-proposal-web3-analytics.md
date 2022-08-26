@@ -110,7 +110,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 I will work full time on the project for three months, and the grant will subsidize my personal costs so I can complete the project and make it generally available on mainnet. Please see the section on Total Budget Requested for cost and time estimates for each component.
 
 ### Front-End Instrumentation
-To use Web3 Analytics, you instrument your app using [Analytics](https://github.com/DavidWells/analytics) (a lightweight open-source frontend analytics abstraction layer) and use the [web3 analytics plugin](https://www.npmjs.com/package/analytics-plugin-web3analytics) I wrote for a decentralized data back-end. Analytics has plugins for most major analytics systems and they can be run in parallel, so taking this approach removes vendor lock-in and reduces risk.
+To use Web3 Analytics, you instrument your app using [Analytics](https://github.com/DavidWells/analytics) (a lightweight open-source frontend analytics abstraction layer) and use the [web3 analytics plugin](https://www.npmjs.com/package/analytics-plugin-web3analytics) I wrote as a decentralized data back-end. Analytics has plugins for most major analytics systems and they can be run in parallel, so taking this approach removes vendor lock-in and reduces risk.
 
 You can see Web3 Analytics working on this [demo site](https://celadon-pothos-120129.netlify.app/) ([source code](https://github.com/andyjagoe/web3-analytics-demo)). Click the buttons to generate events. You'll see confirmation toasts appear in the browser. Open the browser console to see the interactions with the decentralized back-end.
 
@@ -154,7 +154,7 @@ Having the raw analytics data in a decentralized data store is great. It’s an 
 
 But, like blockchain data, it’s difficult to get insights from and build dashboards with a raw data format. You need a way to load it into traditional datastores for processing.
 
-To address this, I’ve created an [indexer](https://github.com/andyjagoe/airbyte-connectors-esm/tree/main/sources/web3analytics-source) for the data. It's an automated pipeline that uses the [Airbyte](https://airbyte.com/) open source ELT platform and pushes normalized data directly into Postgres and S3. Our source connector continuously monitors the blockchain and Ceramic for new apps, users and data for indexing.
+To address this, I’ve created an [indexer](https://github.com/andyjagoe/airbyte-connectors-esm/tree/main/sources/web3analytics-source) for the data. It's an automated pipeline that uses the [Airbyte](https://airbyte.com/) open source ELT platform and pushes normalized data directly to an S3 data lake. Our source connector continuously monitors the blockchain and Ceramic for new apps, users and data for indexing.
 
 For now, data is stored in an S3 data lake in [Apache Parquet](https://databricks.com/glossary/what-is-parquet) format and accessed via [AWS Athena](https://aws.amazon.com/athena/). [Apache Spark](https://spark.apache.org/) also supports S3 data lakes in parquet format and is another option for us as we scale. Once Ceramic's GraphQL interface has robust indexing and sufficient performance to support analytics queries, we will pull data directly from Ceramic instead of using S3.
 
