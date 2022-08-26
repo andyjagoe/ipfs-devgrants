@@ -80,7 +80,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 * Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
 *Decentralized Data Network*:
-* Update Ceramic data models to use new GraphQL interface so indexing is extensible and system scales. 
+* Update Ceramic data models to use Ceramic's new GraphQL interface so indexing is extensible and scalable 
 * Bring up Ceramic mainnet node and migrate from Ceramic testnet to mainnet
 
 *Smart Contract Registry*:
@@ -90,7 +90,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 * Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
 *Indexer*:
-* Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and system scales. 
+* Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and scalable 
 * Migrate from Ceramic testnet to mainnet
 
 *Dashboard Builder*:
@@ -107,7 +107,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 <!-- - The amount of funding required for each milestone -->
 <!-- - How much time this milestone will take to achieve (using real dates) -->
 
-I will work full time on the project for three months, and the grant will subsidize my personal costs so I can complete the project and make it generally available on mainnet. Please see the section on Total Budget requested for cost and time estimates for each component.
+I will work full time on the project for three months, and the grant will subsidize my personal costs so I can complete the project and make it generally available on mainnet. Please see the section on Total Budget Requested for cost and time estimates for each component.
 
 ### Front-End Instrumentation
 To use Web3 Analytics, you instrument your app using [Analytics](https://github.com/DavidWells/analytics) (a lightweight open-source frontend analytics abstraction layer) and use the [web3 analytics plugin](https://www.npmjs.com/package/analytics-plugin-web3analytics) I wrote for a decentralized data back-end. Analytics has plugins for most major analytics systems and they can be run in parallel, so taking this approach removes vendor lock-in and reduces risk.
@@ -117,7 +117,7 @@ You can see Web3 Analytics working on this [demo site](https://celadon-pothos-12
 *What still needs to be done*:
 * Upgrade OpenGSN client to v3 (which uses ethers instead of web3) to reduce the size of our tracking package
 * Migrate from Ceramic testnet to mainnet
-* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon)
+* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
  
 ### Decentralized Data Network
@@ -128,7 +128,7 @@ When a new user arrives at your app, we auto-generate a secp256k1 keypair for th
 I created a [secp256k1 adapter](https://www.npmjs.com/package/key-did-provider-secp256k1) for Ceramic because it is the same curve used in Ethereum and Bitcoin. This is important because of the next component. Since our data is decentralized, we need a smart contract to keep track of it so we can find it again.
 
 *What still needs to be done*:
-* Update Ceramic data models to use new GraphQL interface so indexing is extensible and system scales. 
+* Update Ceramic data models to use Ceramic's new GraphQL interface so indexing is extensible and scalable 
 * Bring up Ceramic mainnet node and migrate from Ceramic testnet to mainnet
 
 
@@ -146,7 +146,7 @@ The contracts are currently running on Rinkeby but will deploy to an EVM compati
 * Update smart contracts to collect a fee from apps that would like to use the service to cover gas station network fees.
 * Create self-service UI to authorize fee collection 
 * Upgrade OpenGSN smart contracts to v3
-* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon)
+* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
 
 ### Indexer
@@ -159,7 +159,7 @@ To address this, I’ve created an [indexer](https://github.com/andyjagoe/airbyt
 For now, data is stored in an S3 data lake in [Apache Parquet](https://databricks.com/glossary/what-is-parquet) format and accessed via [AWS Athena](https://aws.amazon.com/athena/). [Apache Spark](https://spark.apache.org/) also supports S3 data lakes in parquet format and is another option for us as we scale. Once Ceramic's GraphQL interface has robust indexing and sufficient performance to support analytics queries, we will pull data directly from Ceramic instead of using S3.
 
 *What still needs to be done*:
-* Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and system scales. 
+* Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and scalable 
 * Migrate from Ceramic testnet to mainnet
 
 
