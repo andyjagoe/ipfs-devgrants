@@ -47,7 +47,7 @@ I've built a proof-of-concept (alpha) of the system, which consists of 5 compone
 
 [Here is how the system works, with links to source code and the prototype.](https://docs.google.com/document/d/1fCYnOMHetbfH4MvWoPs-e0KHHTIzgwF1IrWBAqSmU08/edit?usp=sharing)
 
-The purpose of this grant is to allow me to finish the project and deploy it to mainnet.
+The purpose of this grant is to allow me to complete a usable initial version of the project and deploy it to mainnet.
 
 ## Value
 
