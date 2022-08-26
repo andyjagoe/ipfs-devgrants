@@ -64,7 +64,7 @@ The primary execution risk for this project is not technical. A proof-of-concept
 
 The good news is that the project has a relatively straight-forward and compelling distribution motion. A project doesn't need to choose between Web3 Analytics and a competing analytics product. The front-end instrumentation package allows sending data to both Web3 Analytics and most other major analytics packages in parallel. This allows someone to easily try Web3 Analytics while still using their existing analytics platform. It also reduces analytics switching costs and platform lock-in. Because web3 projects are open source, we can identify high potential customers, do the integration/migration work ourselves, and issue a PR for inclusion. A project has little to lose and a lot to gain by accepting the PR. Worst case, they have a new solution that has reduced lock-in and switching costs in their analytics stack. This approach won't scale in the long term, but is a great way to bootstrap adoption / trial in the early days of the project.
 
-As web3 projects like [Farcaster](https://www.farcaster.xyz/) (and other like it) mature, they will realize their protocols need decentralized, privacy preserving analytics built into the protocol or provided by a third party decentralized network. Farcaster needs to aggregate impressions, clicks, expands, profile visits, etc (just like Twitter does) and this can't be done separately in each Farcaster client or each client's data will be incomplete/fragemented.
+As web3 projects like [Farcaster](https://www.farcaster.xyz/) (and others like it) mature, they will realize their protocols need decentralized, privacy preserving analytics built into the protocol or provided by a third party decentralized network. Farcaster needs to aggregate impressions, clicks, expands, profile visits, etc (just like Twitter does) and this can't be done separately in each Farcaster client or each client's data will be incomplete/fragemented.
 
 I don't think it will make sense for every web3 project to roll their own decentralized analytics solution from first principles. This is why I think there's a great opportunity for Web3 Analytics and IPFS to provide the solution.
 
@@ -77,7 +77,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 *Front-End Instrumentation*:
 * Upgrade OpenGSN client to v3 (which uses ethers instead of web3) to reduce the size of our tracking package
 * Migrate from Ceramic testnet to mainnet
-* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon)
+* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
 *Decentralized Data Network*:
 * Update Ceramic data models to use new GraphQL interface so indexing is extensible and system scales. 
@@ -87,7 +87,7 @@ The goal of the grant proposal is to deliver a usable first version to mainnet. 
 * Update smart contracts to collect a fee from apps that would like to use the service to cover gas station network fees.
 * Create self-service UI to authorize fee collection 
 * Upgrade OpenGSN smart contracts to v3
-* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon)
+* Migrate from Rinkeby testnet to layer 2 mainnet (most likely Polygon due to cost considerations)
 
 *Indexer*:
 * Update indexer source interface to use Ceramic's new GraphQL interface and data model so indexing is extensible and system scales. 
