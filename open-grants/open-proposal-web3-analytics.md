@@ -170,9 +170,11 @@ I expect we will create many of the first dashboards as templates to make gettin
 
 An alpha version of the dashboard is [here](https://web3analytics.network/) and you can view a [sample dashboard](https://web3analytics.network/users/99281713380d8efc77348ef00b1f02ec/dashboard/andyjagoecom-key-metrics) I’ve created for one of the sites I’ve instrumented. Source code is [here](https://github.com/andyjagoe/web3-analytics-app). Screenshots of a sample dashboard and a sample query used to create a dashboard component are below.
 
+Sample dashboard page UI:
+
 ![image](https://drive.google.com/uc?export=view&id=1thfZY4n0wTLbCSQPYcybt-MXfrgoWidN)
 
-&nbsp;
+Sample query page UI:
 
 ![image](https://drive.google.com/uc?export=view&id=1S2PQc5tBtbNJ8nM59jqu6Kg8sWKvGpEL)
 
@@ -196,7 +198,7 @@ Total budget requested is $30,000:
     * Upgrade OpenGSN to v3 (which uses ethers instead of web3) so we can reduce the size of our tracking package 
 
 * Month 2: $9000
-    * Update Ceramic indexer to use new GraphQL interface so indexing is extensible and scales
+    * Update Ceramic indexer to use new Ceramic GraphQL interface so indexing is extensible and scalable
     * Begin moving the service from testnet to mainnet and cover the costs of running a mainnet Ceramic node (required for mainnet usage of Ceramic) and production indexers.
 
 * Month 3: $9000
